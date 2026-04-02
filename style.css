@@ -5,6 +5,18 @@ body {
     font-family: 'Prompt', sans-serif;
     /* รองรับรอยแหว่งด้านล่างของมือถือ (iPhone Safe Area) */
     padding-bottom: env(safe-area-inset-bottom);
+    /* ใส่สีขาวทับรูป 90% เพื่อให้รูปดูจาง (ปรับ 0.9 เป็นตัวเลขอื่นได้ 0.0 - 1.0) */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                      url('e7bfbbe0-0cef-4220-8733-25706345b77c.jfif');
+    background-attachment: fixed; /* พื้นหลังไม่เลื่อนตามการสกรอลล์ */
+    background-position: center;  /* จัดรูปไว้ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้รูปแสดงซ้ำ */
+    background-size: contain;    /* ปรับรูปให้พอดีจอ (หรือใช้ cover ถ้าอยากให้เต็ม) */
+}
+
+/* ทำให้ส่วนเนื้อหาโปร่งใสเล็กน้อยเพื่อให้เห็นพื้นหลัง */
+#app-content {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ซ่อน Scrollbar สำหรับ Chrome, Safari และ Opera */
