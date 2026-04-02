@@ -1,0 +1,24 @@
+/* นำเข้าฟอนต์ Prompt จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Prompt', sans-serif;
+    /* รองรับรอยแหว่งด้านล่างของมือถือ (iPhone Safe Area) */
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ซ่อน Scrollbar สำหรับ Chrome, Safari และ Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* ซ่อน Scrollbar สำหรับ IE, Edge และ Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* แอนิเมชันปุ่มตอนกด */
+.nav-btn:active i {
+    transform: scale(0.9);
+}
